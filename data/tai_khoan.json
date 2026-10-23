@@ -1,1 +1,8 @@
-[]
+[
+  {
+    "username": "admin",
+    "password": "Admin123!",
+    "role": "admin",
+    "fullname": "Quản trị viên"
+  }
+]
