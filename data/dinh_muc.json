@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "ma_mon": "M01",
+        "ma_nl": "NL01",
+        "so_luong_can": 0.3
+    },
+    {
+        "ma_mon": "M01",
+        "ma_nl": "NL02",
+        "so_luong_can": 0.2
+    }
+]

@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "ma_nl": "NL01",
+        "ten_nl": "Thịt bò",
+        "don_vi": "kg",
+        "gia_nhap": 200000.0,
+        "so_luong_ton": 15.0
+    },
+    {
+        "ma_nl": "NL02",
+        "ten_nl": "Khoai tây",
+        "don_vi": "kg",
+        "gia_nhap": 25000.0,
+        "so_luong_ton": 3.0
+    }
+]
