@@ -9,3 +9,6 @@ dist/
 build/
 *.spec
 .vs/
+data/backup_*/
+data/tai_khoan.json
+

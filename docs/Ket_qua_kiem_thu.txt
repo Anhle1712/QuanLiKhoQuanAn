@@ -1,0 +1,31 @@
+test_21_first_admin (test_inventory.AccountTests.test_21_first_admin) ... ok
+test_22_user_role (test_inventory.AccountTests.test_22_user_role) ... ok
+test_23_authentication (test_inventory.AccountTests.test_23_authentication) ... ok
+test_24_wrong_password (test_inventory.AccountTests.test_24_wrong_password) ... ok
+test_25_legacy_migration (test_inventory.AccountTests.test_25_legacy_migration) ... ok
+test_26_change_password (test_inventory.AccountTests.test_26_change_password) ... ok
+test_01_create_material (test_inventory.InventoryTests.test_01_create_material) ... ok
+test_02_update_material_no_stock_overwrite (test_inventory.InventoryTests.test_02_update_material_no_stock_overwrite) ... ok
+test_03_duplicate_phone_invalid (test_inventory.InventoryTests.test_03_duplicate_phone_invalid) ... ok
+test_04_import (test_inventory.InventoryTests.test_04_import) ... ok
+test_05_export (test_inventory.InventoryTests.test_05_export) ... ok
+test_06_over_export (test_inventory.InventoryTests.test_06_over_export) ... ok
+test_07_aggregate_duplicates (test_inventory.InventoryTests.test_07_aggregate_duplicates) ... ok
+test_08_duplicate_voucher (test_inventory.InventoryTests.test_08_duplicate_voucher) ... ok
+test_09_recipe (test_inventory.InventoryTests.test_09_recipe) ... ok
+test_10_recipe_shortage (test_inventory.InventoryTests.test_10_recipe_shortage) ... ok
+test_11_date_expiry_warning (test_inventory.InventoryTests.test_11_date_expiry_warning) ... ok
+test_12_low_stock_warning (test_inventory.InventoryTests.test_12_low_stock_warning) ... ok
+test_13_stats (test_inventory.InventoryTests.test_13_stats) ... ok
+test_14_delete_guard (test_inventory.InventoryTests.test_14_delete_guard) ... ok
+test_15_delete_supplier_guard (test_inventory.InventoryTests.test_15_delete_supplier_guard) ... ok
+test_16_csv (test_inventory.InventoryTests.test_16_csv) ... ok
+test_17_atomic_corrupt (test_inventory.InventoryTests.test_17_atomic_corrupt) ... ok
+test_18_api_mock (test_inventory.InventoryTests.test_18_api_mock) ... ok
+test_19_invalid_quantity (test_inventory.InventoryTests.test_19_invalid_quantity) ... ok
+test_20_invalid_recipe (test_inventory.InventoryTests.test_20_invalid_recipe) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.681s
+
+OK

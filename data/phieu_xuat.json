@@ -1,1 +1,32 @@
-[]
+[
+  {
+    "ma_phieu": "PX001",
+    "ngay_lap": "2026-11-17",
+    "nhan_vien": "admin",
+    "chi_tiet": [
+      {
+        "ma_nl": "NL01",
+        "so_luong": "3",
+        "don_gia": 0
+      }
+    ],
+    "ly_do": "xuat thit bo che bien mon an",
+    "loai": "xuat",
+    "tong_tien": 0
+  },
+  {
+    "ma_phieu": "PX002",
+    "ngay_lap": "2026-11-17",
+    "nhan_vien": "user01",
+    "chi_tiet": [
+      {
+        "ma_nl": "NL01",
+        "so_luong": "2",
+        "don_gia": 0
+      }
+    ],
+    "ly_do": "test nhân viên xuất thịt",
+    "loai": "xuat",
+    "tong_tien": 0
+  }
+]

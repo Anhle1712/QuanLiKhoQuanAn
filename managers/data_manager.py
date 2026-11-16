@@ -1,40 +1,66 @@
+"""Atomic JSON storage and optional backups for the original project."""
 import json
 import os
 import re
 import shutil
+import tempfile
 from datetime import datetime
+from pathlib import Path
+from config import DATA_DIR
 
 class DataManager:
     @staticmethod
+    def _path(file_path):
+        p = Path(file_path)
+        if not p.is_absolute() and p.parts and p.parts[0] == "data":
+            return DATA_DIR.joinpath(*p.parts[1:])
+        return p
+
+    @staticmethod
     def doc_json(file_path):
-        if not os.path.exists(file_path):
+        path = DataManager._path(file_path)
+        if not path.exists():
             return []
-        with open(file_path, 'r', encoding='utf-8') as f:
-            try:
-                return json.load(f)
-            except json.JSONDecodeError:
+        try:
+            with path.open('r', encoding='utf-8') as f:
+                contents = f.read()
+            if not contents.strip():
                 return []
+            result = json.loads(contents)
+            if not isinstance(result, list):
+                raise ValueError(f"{path.name}: dữ liệu phải là danh sách JSON")
+            return result
+        except json.JSONDecodeError as exc:
+            raise ValueError(f"{path.name}: JSON không hợp lệ ({exc})") from exc
 
     @staticmethod
     def ghi_json(file_path, data):
-        with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, ensure_ascii=False, indent=4)
+        path = DataManager._path(file_path)
+        path.parent.mkdir(parents=True, exist_ok=True)
+        tmp_name = None
+        try:
+            with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=str(path.parent), prefix='._', suffix='.json', delete=False) as f:
+                tmp_name = f.name
+                json.dump(data, f, ensure_ascii=False, indent=2)
+                f.flush()
+                os.fsync(f.fileno())
+            os.replace(tmp_name, path)
+        finally:
+            if tmp_name and os.path.exists(tmp_name):
+                os.unlink(tmp_name)
 
     @staticmethod
     def validate_sdt(sdt):
-        pattern = r'^0\d{9}$'
-        return bool(re.match(pattern, sdt))
+        return re.fullmatch(r'0[0-9]{9}', str(sdt)) is not None
+
+    @staticmethod
+    def validate_ma(ma):
+        return re.fullmatch(r'[A-Za-z0-9_-]{2,24}', str(ma)) is not None
 
     @staticmethod
     def backup_data():
-        backup_folder = "data/backup_" + datetime.now().strftime("%Y%m%d_%H%M%S")
-        os.makedirs(backup_folder, exist_ok=True)
-        data_files = [
-            "dinh_muc.json", "mon_an.json", "nguyen_lieu.json", 
-            "nha_cung_cap.json", "phieu_nhap.json", "phieu_xuat.json", "tai_khoan.json"
-        ]
-        for file in data_files:
-            src = os.path.join("data", file)
-            if os.path.exists(src):
-                shutil.copy(src, backup_folder)
-        return backup_folder
+        folder = DATA_DIR / ('backup_' + datetime.now().strftime('%Y%m%d_%H%M%S_%f'))
+        folder.mkdir(parents=True, exist_ok=True)
+        for src in DATA_DIR.glob('*.json'):
+            shutil.copy2(src, folder / src.name)
+        return str(folder)
