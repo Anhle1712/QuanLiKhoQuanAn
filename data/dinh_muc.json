@@ -1,12 +1,72 @@
 [
-    {
-        "ma_mon": "M01",
-        "ma_nl": "NL01",
-        "so_luong_can": 0.3
-    },
-    {
-        "ma_mon": "M01",
-        "ma_nl": "NL02",
-        "so_luong_can": 0.2
-    }
+  {
+    "ma_mon": "M01",
+    "ma_nl": "NL01",
+    "so_luong_can": 0.3
+  },
+  {
+    "ma_mon": "M01",
+    "ma_nl": "NL08",
+    "so_luong_can": 0.2
+  },
+  {
+    "ma_mon": "M01",
+    "ma_nl": "NL05",
+    "so_luong_can": 0.05
+  },
+  {
+    "ma_mon": "M02",
+    "ma_nl": "NL02",
+    "so_luong_can": 0.3
+  },
+  {
+    "ma_mon": "M02",
+    "ma_nl": "NL03",
+    "so_luong_can": 0.1
+  },
+  {
+    "ma_mon": "M02",
+    "ma_nl": "NL06",
+    "so_luong_can": 0.05
+  },
+  {
+    "ma_mon": "M03",
+    "ma_nl": "NL01",
+    "so_luong_can": 0.2
+  },
+  {
+    "ma_mon": "M03",
+    "ma_nl": "NL08",
+    "so_luong_can": 0.25
+  },
+  {
+    "ma_mon": "M03",
+    "ma_nl": "NL05",
+    "so_luong_can": 0.05
+  },
+  {
+    "ma_mon": "M04",
+    "ma_nl": "NL04",
+    "so_luong_can": 0.3
+  },
+  {
+    "ma_mon": "M04",
+    "ma_nl": "NL06",
+    "so_luong_can": 0.03
+  },
+  {
+    "ma_mon": "M05",
+    "ma_nl": "NL08",
+    "so_luong_can": 0.25
+  },
+  {
+    "ma_mon": "M05",
+    "ma_nl": "NL03",
+    "so_luong_can": 0.1
+  },
+  {
+    "ma_mon": "M05",
+    "ma_nl": "NL06",
+    "so_luong_can": 0.05
+  }
 ]

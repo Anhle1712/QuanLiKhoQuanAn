@@ -28,5 +28,80 @@
     "ma_ncc": "NCC01",
     "loai": "nhap",
     "tong_tien": 100000.0
+  },
+  {
+    "ma_phieu": "PN03",
+    "ngay_lap": "2026-11-24",
+    "nhan_vien": "Hung123",
+    "chi_tiet": [
+      {
+        "ma_nl": "NL03",
+        "so_luong": "15",
+        "don_gia": "20.000"
+      }
+    ],
+    "ma_ncc": "NCC01",
+    "loai": "nhap",
+    "tong_tien": 300.0
+  },
+  {
+    "ma_phieu": "PN01",
+    "ngay_lap": "2026-11-20",
+    "nhan_vien": "admin",
+    "ma_ncc": "NCC01",
+    "chi_tiet": [
+      {
+        "ma_nl": "NL01",
+        "so_luong": "10",
+        "don_gia": "45000"
+      }
+    ],
+    "loai": "nhap",
+    "tong_tien": 450000.0
+  },
+  {
+    "ma_phieu": "PN02",
+    "ngay_lap": "2026-11-20",
+    "nhan_vien": "admin",
+    "ma_ncc": "NCC02",
+    "chi_tiet": [
+      {
+        "ma_nl": "NL02",
+        "so_luong": "8",
+        "don_gia": "180000"
+      }
+    ],
+    "loai": "nhap",
+    "tong_tien": 1440000.0
+  },
+  {
+    "ma_phieu": "PN04",
+    "ngay_lap": "2026-11-21",
+    "nhan_vien": "admin",
+    "ma_ncc": "NCC03",
+    "chi_tiet": [
+      {
+        "ma_nl": "NL08",
+        "so_luong": "30",
+        "don_gia": "20000"
+      }
+    ],
+    "loai": "nhap",
+    "tong_tien": 600000.0
+  },
+  {
+    "ma_phieu": "PN05",
+    "ngay_lap": "2026-11-22",
+    "nhan_vien": "admin",
+    "ma_ncc": "NCC02",
+    "chi_tiet": [
+      {
+        "ma_nl": "NL04",
+        "so_luong": "10",
+        "don_gia": "25000"
+      }
+    ],
+    "loai": "nhap",
+    "tong_tien": 250000.0
   }
 ]

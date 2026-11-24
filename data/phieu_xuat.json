@@ -28,5 +28,65 @@
     "ly_do": "test nhân viên xuất thịt",
     "loai": "xuat",
     "tong_tien": 0
+  },
+  {
+    "ma_phieu": "PX03",
+    "ngay_lap": "2026-11-24",
+    "nhan_vien": "Hung123",
+    "chi_tiet": [
+      {
+        "ma_nl": "NL03",
+        "so_luong": "10.0",
+        "don_gia": 0
+      }
+    ],
+    "ly_do": "Bán",
+    "loai": "xuat",
+    "tong_tien": 0
+  },
+  {
+    "ma_phieu": "PX01",
+    "ngay_lap": "2026-11-23",
+    "nhan_vien": "admin",
+    "ly_do": "Nấu cơm gà",
+    "chi_tiet": [
+      {
+        "ma_nl": "NL01",
+        "so_luong": "3",
+        "don_gia": 0
+      }
+    ],
+    "loai": "xuat",
+    "tong_tien": 0
+  },
+  {
+    "ma_phieu": "PX02",
+    "ngay_lap": "2026-11-23",
+    "nhan_vien": "admin",
+    "ly_do": "Nấu bò lúc lắc",
+    "chi_tiet": [
+      {
+        "ma_nl": "NL02",
+        "so_luong": "2",
+        "don_gia": 0
+      }
+    ],
+    "loai": "xuat",
+    "tong_tien": 0
+  },
+  {
+    "ma_phieu": "PX04",
+    "ngay_lap": "2026-11-24",
+    "nhan_vien": "admin",
+    "ly_do": "Chuẩn bị món ăn",
+    "chi_tiet": [
+      {
+        "ma_nl": "NL03",
+        "so_luong": "2",
+        "don_gia": 0
+      }
+    ],
+    "loai": "xuat",
+    "tong_tien": 0
   }
 ]

@@ -1,7 +1,27 @@
 [
-    {
-        "ma_mon": "M01",
-        "ten_mon": "Bò lúc lắc",
-        "gia_ban": 85000.0
-    }
+  {
+    "ma_mon": "M01",
+    "ten_mon": "Cơm gà",
+    "gia_ban": 55000.0
+  },
+  {
+    "ma_mon": "M02",
+    "ten_mon": "Bò lúc lắc",
+    "gia_ban": 85000.0
+  },
+  {
+    "ma_mon": "M03",
+    "ten_mon": "Cơm sườn",
+    "gia_ban": 60000.0
+  },
+  {
+    "ma_mon": "M04",
+    "ten_mon": "Khoai tây chiên",
+    "gia_ban": 30000.0
+  },
+  {
+    "ma_mon": "M05",
+    "ten_mon": "Cơm chiên dương châu",
+    "gia_ban": 65000.0
+  }
 ]

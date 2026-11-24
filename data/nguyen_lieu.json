@@ -1,16 +1,74 @@
 [
   {
     "ma_nl": "NL01",
-    "ten_nl": "Thịt bò",
+    "ten_nl": "Thịt gà",
     "don_vi": "kg",
-    "gia_nhap": 10000.0,
-    "so_luong_ton": 25.0
+    "gia_nhap": 45000.0,
+    "so_luong_ton": 32.0,
+    "nguong_toi_thieu": 5.0,
+    "han_su_dung": "2026-12-30"
   },
   {
     "ma_nl": "NL02",
+    "ten_nl": "Thịt bò",
+    "don_vi": "kg",
+    "gia_nhap": 180000.0,
+    "so_luong_ton": 9.0,
+    "nguong_toi_thieu": 3.0,
+    "han_su_dung": "2026-12-25"
+  },
+  {
+    "ma_nl": "NL03",
+    "ten_nl": "Cà rốt",
+    "don_vi": "kg",
+    "gia_nhap": 18000.0,
+    "so_luong_ton": 33.0,
+    "nguong_toi_thieu": 3.0,
+    "han_su_dung": "2026-12-20"
+  },
+  {
+    "ma_nl": "NL04",
     "ten_nl": "Khoai tây",
     "don_vi": "kg",
     "gia_nhap": 25000.0,
-    "so_luong_ton": 3.0
+    "so_luong_ton": 28.0,
+    "nguong_toi_thieu": 4.0,
+    "han_su_dung": "2027-01-15"
+  },
+  {
+    "ma_nl": "NL05",
+    "ten_nl": "Hành lá",
+    "don_vi": "kg",
+    "gia_nhap": 30000.0,
+    "so_luong_ton": 8.0,
+    "nguong_toi_thieu": 2.0,
+    "han_su_dung": "2026-12-10"
+  },
+  {
+    "ma_nl": "NL06",
+    "ten_nl": "Dầu ăn",
+    "don_vi": "lít",
+    "gia_nhap": 45000.0,
+    "so_luong_ton": 10.0,
+    "nguong_toi_thieu": 3.0,
+    "han_su_dung": "2027-06-30"
+  },
+  {
+    "ma_nl": "NL07",
+    "ten_nl": "Nước mắm",
+    "don_vi": "lít",
+    "gia_nhap": 55000.0,
+    "so_luong_ton": 7.0,
+    "nguong_toi_thieu": 2.0,
+    "han_su_dung": "2027-08-20"
+  },
+  {
+    "ma_nl": "NL08",
+    "ten_nl": "Gạo",
+    "don_vi": "kg",
+    "gia_nhap": 20000.0,
+    "so_luong_ton": 80.0,
+    "nguong_toi_thieu": 10.0,
+    "han_su_dung": "2027-05-30"
   }
 ]

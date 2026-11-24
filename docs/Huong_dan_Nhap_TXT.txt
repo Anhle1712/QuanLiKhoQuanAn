@@ -1,0 +1,30 @@
+HƯỚNG DẪN NHẬP DỮ LIỆU BẰNG FILE TXT
+
+1. Vào Cài đặt -> Nhập dữ liệu từ file TXT.
+2. Chọn file .txt.
+3. Chương trình tự đọc và lưu vào các file JSON hiện tại.
+4. Nếu mã nguyên liệu / món ăn / nhà cung cấp đã tồn tại thì chương trình cập nhật dữ liệu đó.
+5. Nếu mã phiếu nhập / xuất đã tồn tại thì bỏ qua để không cộng tồn kho lần 2.
+
+CÚ PHÁP FILE TXT
+
+[NGUYEN_LIEU]
+Mã NL | Tên nguyên liệu | Đơn vị | Giá nhập | Tồn kho | Ngưỡng tối thiểu | Hạn sử dụng
+
+[NHA_CUNG_CAP]
+Mã NCC | Tên nhà cung cấp | Số điện thoại | Địa chỉ
+
+[MON_AN]
+Mã món | Tên món | Giá bán
+
+[DINH_MUC]
+Mã món | Mã NL | Định mức / suất
+
+[PHIEU_NHAP]
+Mã phiếu | Ngày | Mã NCC | Mã NL | Số lượng | Đơn giá | Nhân viên
+
+[PHIEU_XUAT]
+Mã phiếu | Ngày | Mã NL | Số lượng | Nhân viên | Lý do
+
+Có thể dùng dấu |, TAB hoặc ; để ngăn cách các cột.
+Ngày dùng YYYY-MM-DD.

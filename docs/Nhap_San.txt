@@ -1,0 +1,55 @@
+[NGUYEN_LIEU]
+NL01 | Thịt gà | kg | 45000 | 20 | 5 | 2026-12-30
+NL02 | Thịt bò | kg | 180000 | 15 | 3 | 2026-12-25
+NL03 | Cà rốt | kg | 18000 | 12 | 3 | 2026-12-20
+NL04 | Khoai tây | kg | 25000 | 18 | 4 | 2027-01-15
+NL05 | Hành lá | kg | 30000 | 8 | 2 | 2026-12-10
+NL06 | Dầu ăn | lít | 45000 | 10 | 3 | 2027-06-30
+NL07 | Nước mắm | lít | 55000 | 7 | 2 | 2027-08-20
+NL08 | Gạo | kg | 20000 | 50 | 10 | 2027-05-30
+
+
+[NHA_CUNG_CAP]
+NCC01 | Công ty Thực phẩm Sạch | 0901234567 | TP.HCM
+NCC02 | Công ty Minh Phát | 0912345678 | Bình Dương
+NCC03 | Nhà cung cấp An Phú | 0987654321 | Đồng Nai
+
+
+[MON_AN]
+M01 | Cơm gà | 55000
+M02 | Bò lúc lắc | 85000
+M03 | Cơm sườn | 60000
+M04 | Khoai tây chiên | 30000
+M05 | Cơm chiên dương châu | 65000
+
+
+[DINH_MUC]
+M01 | NL01 | 0.30
+M01 | NL08 | 0.20
+M01 | NL05 | 0.05
+M02 | NL02 | 0.30
+M02 | NL03 | 0.10
+M02 | NL06 | 0.05
+M03 | NL01 | 0.20
+M03 | NL08 | 0.25
+M03 | NL05 | 0.05
+M04 | NL04 | 0.30
+M04 | NL06 | 0.03
+M05 | NL08 | 0.25
+M05 | NL03 | 0.10
+M05 | NL06 | 0.05
+
+
+[PHIEU_NHAP]
+PN01 | 2026-11-20 | NCC01 | NL01 | 10 | 45000 | admin
+PN02 | 2026-11-20 | NCC02 | NL02 | 8 | 180000 | admin
+PN03 | 2026-11-21 | NCC01 | NL03 | 10 | 18000 | admin
+PN04 | 2026-11-21 | NCC03 | NL08 | 30 | 20000 | admin
+PN05 | 2026-11-22 | NCC02 | NL04 | 10 | 25000 | admin
+
+
+[PHIEU_XUAT]
+PX01 | 2026-11-23 | NL01 | 3 | admin | Nấu cơm gà
+PX02 | 2026-11-23 | NL02 | 2 | admin | Nấu bò lúc lắc
+PX03 | 2026-11-23 | NL08 | 5 | admin | Nấu cơm
+PX04 | 2026-11-24 | NL03 | 2 | admin | Chuẩn bị món ăn
