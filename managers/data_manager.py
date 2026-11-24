@@ -1,4 +1,4 @@
-"""Atomic JSON storage and optional backups for the original project."""
+"""Lưu trữ JSON, sao lưu và tiện ích tạo mã tự động cho project."""
 import json
 import os
 import re
@@ -56,6 +56,17 @@ class DataManager:
     @staticmethod
     def validate_ma(ma):
         return re.fullmatch(r'[A-Za-z0-9_-]{2,24}', str(ma)) is not None
+
+    @staticmethod
+    def next_code(rows, field, prefix, width=2):
+        """Tạo mã tiếp theo: NL01, NL02... / M01, M02..."""
+        max_number = 0
+        for row in rows:
+            value = str(row.get(field, ''))
+            match = re.fullmatch(re.escape(prefix) + r'(\d+)', value, re.IGNORECASE)
+            if match:
+                max_number = max(max_number, int(match.group(1)))
+        return f'{prefix}{max_number + 1:0{width}d}'
 
     @staticmethod
     def backup_data():

@@ -1,8 +1,20 @@
 [
-    {
-        "ma_ncc": "NCC01",
-        "ten_ncc": "Công ty Thực phẩm Sạch",
-        "sdt": "0901234567",
-        "dia_chi": "TP.HCM"
-    }
+  {
+    "ma_ncc": "NCC01",
+    "ten_ncc": "Công ty Thực phẩm Sạch",
+    "sdt": "0901234567",
+    "dia_chi": "TP.HCM"
+  },
+  {
+    "ma_ncc": "NCC02",
+    "ten_ncc": "Công ty Minh Phát",
+    "sdt": "0912345678",
+    "dia_chi": "Bình Dương"
+  },
+  {
+    "ma_ncc": "NCC03",
+    "ten_ncc": "Nhà cung cấp An Phú",
+    "sdt": "0987654321",
+    "dia_chi": "Đồng Nai"
+  }
 ]

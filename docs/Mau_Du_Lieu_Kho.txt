@@ -1,0 +1,30 @@
+# File TXT mẫu. Dùng dấu | để ngăn cách các cột.
+# Có thể bỏ các dòng bắt đầu bằng #.
+
+[NGUYEN_LIEU]
+# Mã NL | Tên nguyên liệu | Đơn vị | Giá nhập | Tồn kho | Ngưỡng tối thiểu | Hạn sử dụng
+NL10 | Thịt gà | kg | 45000 | 10 | 5 | 2026-12-30
+NL11 | Cà chua | kg | 30000 | 8 | 3 | 2026-12-20
+
+[NHA_CUNG_CAP]
+# Mã NCC | Tên nhà cung cấp | Số điện thoại | Địa chỉ
+NCC10 | Công ty Thực phẩm Việt | 0901234567 | TP.HCM
+
+[MON_AN]
+# Mã món | Tên món | Giá bán
+M10 | Cơm gà | 55000
+M11 | Bò lúc lắc | 85000
+
+[DINH_MUC]
+# Mã món | Mã NL | Định mức / suất
+M10 | NL10 | 0.30
+M10 | NL11 | 0.10
+M11 | NL10 | 0.25
+
+[PHIEU_NHAP]
+# Mã phiếu | Ngày | Mã NCC | Mã NL | Số lượng | Đơn giá | Nhân viên
+PN10 | 2026-11-24 | NCC10 | NL10 | 5 | 45000 | admin
+
+[PHIEU_XUAT]
+# Mã phiếu | Ngày | Mã NL | Số lượng | Nhân viên | Lý do
+PX10 | 2026-11-24 | NL10 | 1 | admin | Nấu cơm gà
